@@ -8,5 +8,29 @@ db = client.dbsparta
 
 
 @app.route('/')
-def home():
+def landing():
+    return render_template('landing.html')
+
+
+@app.route('/main')
+def main():
     return render_template('main.html')
+
+
+@app.route('/detail')
+def detail():
+    return render_template('detail.html')
+
+
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
+
+@app.route('/create')
+def create():
+    return render_template('create.html')
+
+
+if __name__ == '__main__':
+    app.run()
