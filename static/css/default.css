@@ -1,0 +1,14 @@
+/* 기본 세팅 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root{
+    --main-bg-color : #3B3486;
+    --main-color : #7743DB;
+    --point-color : #FFE9B1;
+    --base-color : #FCFDF2;
+}
+
+*{
+    font-family: 'pretendard';
+}
+

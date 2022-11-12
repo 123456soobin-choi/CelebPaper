@@ -1,0 +1,124 @@
+/* landing page */
+#landing{
+    width: 100vw;
+    height: 100vh;
+    background: var(--main-bg-color);
+}
+
+#landing .wrap{
+    width: 90vw;
+    height: 90vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.3);
+}
+
+#landing .wrap .con{
+    width: 60vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+/* stars */
+#lading .stars img{
+    display: block;
+}
+#landing .star1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+}
+
+#landing .star2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+#landing h1{
+    font-size: 70px;
+    line-height: 80px;
+    color: var(--base-color);
+    text-align: center;
+    padding-top: 10%
+}
+
+#landing .btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#landing button:first-child{
+    margin-right: 30px;
+}
+
+#landing button{
+    display: block;
+    background-color: var(--main-color);
+    font-size: 30px;
+    color: var(--base-color);
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+}
+
+/* tablet */
+@media all and (min-width:768px) and (max-width: 1200px){
+    #landing .stars{
+        display: none;
+    }
+
+    #landing .wrap .con h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #landing .btn button{
+        font-size: 20px;
+    }    
+}
+
+/* mobile */
+@media all and (max-width:768px){
+    .pc{
+        display: none;
+    }
+
+    #lading .stars img{
+        display: unset;
+    }
+
+    #landing .stars .star1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90px;
+    }
+
+    #landing .wrap .con h1{
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 40%;
+    }
+
+
+    #landing .btn{
+        margin-top: 20px;
+    }
+
+    #landing .btn button{
+        font-size : 12px;
+    }
+
+    #landing .btn button:first-child{
+        margin-right: 14px;
+    }
+
+} 
